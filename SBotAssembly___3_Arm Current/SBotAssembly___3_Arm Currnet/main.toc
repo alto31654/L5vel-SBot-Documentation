@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Motor Assembly}{1}{section.1}%
+\contentsline {section}{\numberline {2}MK5i Swerve Motor Module Assembly}{4}{section.2}%
+\contentsline {section}{\numberline {3}Motor Set Up}{11}{section.3}%
+\contentsline {section}{\numberline {4}Power Distribution Assembly}{14}{section.4}%
+\contentsline {section}{\numberline {5}Encoder and CANivore Set Up and Motor Testing}{17}{section.5}%
+\contentsline {section}{\numberline {6}Base Assembly -- Bottom Layer}{21}{section.6}%
+\contentsline {section}{\numberline {7}Base Assembly - Middle Level}{29}{section.7}%
+\contentsline {section}{\numberline {8}Base Assembly - Top Level}{33}{section.8}%
+\contentsline {section}{\numberline {A}Motor Controller Configurations}{35}{appendix.A}%
