@@ -1,0 +1,212 @@
+\section{Motor Controller Configurations}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{S-Bot Assembly Guide}
+\rhead{APPENDICES - APPENDIX A}
+\label{app:motor-config}
+This appendix contains the conplete SPARK Flex configurations
+
+\rowcolors{2}{gray!10}{white}
+\begin{longtable}{p{3.5cm} p{8cm} p{3cm}}
+
+
+\toprule
+\rowcolor{sbotblue!15}
+\textbf{Tab} & \textbf{Setting} & \textbf{Value} \\
+\midrule
+\endfirsthead
+
+\toprule
+\rowcolor{sbotblue!15}
+\textbf{Tab} & \textbf{Setting} & \textbf{Value} \\
+\midrule
+\endhead
+
+\bottomrule
+\endfoot
+
+Basic & Motor Type & \texttt{Brushless} \\
+Basic & Idle Mode & \texttt{BRAKE} \\
+Basic & Input Deadband & \texttt{0.05} \\
+Basic & Inverted & \texttt{Off} \\
+Basic & Open Loop Ramp Rate & \texttt{0} \\
+
+Motor Advanced & Commutation Advance & \texttt{0} \\
+Motor Advanced & Motor Kv & \texttt{480} \\
+
+Brushless & Pole Pairs & \texttt{7} \\
+
+Current Limits & Current Chop & \texttt{115} \\
+Current Limits & Current Chop Cycles & \texttt{0} \\
+Current Limits & Smart Current Stall Limit & \texttt{80} \\
+Current Limits & Smart Current Free Limit & \texttt{20} \\
+
+Closed Loop Control & Closed Loop Control Sensor & \texttt{MAIN\_ENCODER} \\
+Closed Loop Control & Voltage Compensation Mode & \texttt{NO\_VOLTAGE\_COMP} \\
+Closed Loop Control & Compensated Nominal Voltage & \texttt{0} \\
+Closed Loop Control & Closed Loop Ramp Rate & \texttt{0} \\
+Closed Loop Control & Position PID Wrap Enable & \texttt{OFF} \\
+Closed Loop Control & Position PID Min Input & \texttt{0} \\
+Closed Loop Control & Position PID Max Input & \texttt{0} \\
+Closed Loop Control & Detached Encoder Device ID & \texttt{Leave Blank} \\
+
+Closed Loop Control Slot 0 & P0 & \texttt{Steer Motor: 0.5, Drive Motor: .119} \\
+Closed Loop Control Slot 0 & I0 & \texttt{0} \\
+Closed Loop Control Slot 0 & D0 & \texttt{0} \\
+Closed Loop Control Slot 0 & V0 & \texttt{0} \\
+Closed Loop Control Slot 0 & IZone 0 & \texttt{0} \\
+Closed Loop Control Slot 0 & D Filler 0 & \texttt{0} \\
+Closed Loop Control Slot 0 & Output Min 0 & \texttt{-1} \\
+Closed Loop Control Slot 0 & Output Max 0 & \texttt{1} \\
+Closed Loop Control Slot 0 & I Max Accum 0 & \texttt{0} \\
+Closed Loop Control Slot 0 & Allowed Closed Loop Error 0 & \texttt{0} \\
+Closed Loop Control Slot 0 & MAXMotion Cruise Velocity 0 & \texttt{0} \\
+Closed Loop Control Slot 0 & MAXMotion Max Accek 0 & \texttt{0} \\
+Closed Loop Control Slot 0 & MAXMOtion Max Jerk 0 & \texttt{0} \\
+Closed Loop Control Slot 0 & MAXMotion Allowed Profile Error 0 & \texttt{0} \\
+Closed Loop Control Slot 0 & MAXMotion Position Mode 0 & \texttt{Trapezoidal} \\
+Closed Loop Control Slot 0 & S0 & \texttt{0} \\
+Closed Loop Control Slot 0 & A0 & \texttt{0} \\
+Closed Loop Control Slot 0 & G0 & \texttt{0} \\
+Closed Loop Control Slot 0 & Cos 0 & \texttt{0} \\
+Closed Loop Control Slot 0 & CosRatio 0 & \texttt{1} \\
+
+Closed Loop Control Slot 1 & P1 & \texttt{0} \\
+Closed Loop Control Slot 1 & I1 & \texttt{0} \\
+Closed Loop Control Slot 1 & D1 & \texttt{0} \\
+Closed Loop Control Slot 1 & V1 & \texttt{0} \\
+Closed Loop Control Slot 1 & IZone 1 & \texttt{0} \\
+Closed Loop Control Slot 1 & D Filter 1 & \texttt{0} \\
+Closed Loop Control Slot 1 & Output Min 1 & \texttt{-1} \\
+Closed Loop Control Slot 1 & Output Max 1 & \texttt{1} \\
+Closed Loop Control Slot 1 & I Max Accum 1 & \texttt{0} \\
+Closed Loop Control Slot 1 & Allowed Closed Loop Error 1 & \texttt{0} \\
+Closed Loop Control Slot 1 & MAXMotion Cruise Velocity 1 & \texttt{0} \\
+Closed Loop Control Slot 1 & MAXMotion Max Accek 1 & \texttt{0} \\
+Closed Loop Control Slot 1 & MAXMOtion Max Jerk 1 & \texttt{0} \\
+Closed Loop Control Slot 1 & MAXMotion Allowed Profile Error 1 & \texttt{0} \\
+Closed Loop Control Slot 1 & MAXMotion Position Mode 1 & \texttt{Trapezoidal} \\
+Closed Loop Control Slot 1 & S1 & \texttt{0} \\
+Closed Loop Control Slot 1 & A1 & \texttt{0} \\
+Closed Loop Control Slot 1 & G1 & \texttt{0} \\
+Closed Loop Control Slot 1 & Cos 1 & \texttt{0} \\
+Closed Loop Control Slot 1 & CosRatio 1 & \texttt{1} \\
+
+Closed Loop Control Slot 2 & P2 & \texttt{0} \\
+Closed Loop Control Slot 2 & I2 & \texttt{0} \\
+Closed Loop Control Slot 2 & D2 & \texttt{0} \\
+Closed Loop Control Slot 2 & V2 & \texttt{0} \\
+Closed Loop Control Slot 2 & IZone 2 & \texttt{0} \\
+Closed Loop Control Slot 2 & D Filter 2 & \texttt{0} \\
+Closed Loop Control Slot 2 & Output Min 2 & \texttt{-1} \\
+Closed Loop Control Slot 2 & Output Max 2 & \texttt{1} \\
+Closed Loop Control Slot 2 & I Max Accum 2 & \texttt{0} \\
+Closed Loop Control Slot 2 & Allowed Closed Loop Error 2 & \texttt{0} \\
+Closed Loop Control Slot 2 & MAXMotion Cruise Velocity 2 & \texttt{0} \\
+Closed Loop Control Slot 2 & MAXMotion Max Accek 2 & \texttt{0} \\
+Closed Loop Control Slot 2 & MAXMOtion Max Jerk 2 & \texttt{0} \\
+Closed Loop Control Slot 2 & MAXMotion Allowed Profile Error 2 & \texttt{0} \\
+Closed Loop Control Slot 2 & MAXMotion Position Mode 2 & \texttt{Trapezoidal} \\
+Closed Loop Control Slot 2 & S2 & \texttt{0} \\
+Closed Loop Control Slot 2 & A2 & \texttt{0} \\
+Closed Loop Control Slot 2 & G2 & \texttt{0} \\
+Closed Loop Control Slot 2 & Cos 2 & \texttt{0} \\
+Closed Loop Control Slot 2 & CosRatio 2 & \texttt{1} \\
+
+Closed Loop Control Slot 3 & P3 & \texttt{0} \\
+Closed Loop Control Slot 3 & I3 & \texttt{0} \\
+Closed Loop Control Slot 3 & D3 & \texttt{0} \\
+Closed Loop Control Slot 3 & V3 & \texttt{0} \\
+Closed Loop Control Slot 3 & IZone 3 & \texttt{0} \\
+Closed Loop Control Slot 3 & D Filter 3 & \texttt{0} \\
+Closed Loop Control Slot 3 & Output Min 3 & \texttt{-1} \\
+Closed Loop Control Slot 3 & Output Max 3 & \texttt{1} \\
+Closed Loop Control Slot 3 & I Max Accum 3 & \texttt{0} \\
+Closed Loop Control Slot 3 & Allowed Closed Loop Error 3 & \texttt{0} \\
+Closed Loop Control Slot 3 & MAXMotion Cruise Velocity 3 & \texttt{0} \\
+Closed Loop Control Slot 3 & MAXMotion Max Accek 3 & \texttt{0} \\
+Closed Loop Control Slot 3 & MAXMOtion Max Jerk 3 & \texttt{0} \\
+Closed Loop Control Slot 3 & MAXMotion Allowed Profile Error 3 & \texttt{0} \\
+Closed Loop Control Slot 3 & MAXMotion Position Mode 3 & \texttt{Trapezoidal} \\
+Closed Loop Control Slot 3 & S3 & \texttt{0} \\
+Closed Loop Control Slot 3 & A3 & \texttt{0} \\
+Closed Loop Control Slot 3 & G3 & \texttt{0} \\
+Closed Loop Control Slot 3 & Cos 3 & \texttt{0} \\
+Closed Loop Control Slot 3 & CosRatio 3 & \texttt{1} \\
+
+Limits & Limit Switch Fwd Polarity & \texttt{Off} \\
+Limits & Limit Switch Rev Polarity & \texttt{Off} \\
+Limits & Hard Limit Fwd En & \texttt{STOP\_MOVING\_} \\
+Limits & Hard Limit Rev En & \texttt{STOP\_MOVING\_} \\
+Limits & Soft Limit Fwd En & \texttt{Off} \\
+Limits & Soft Limit Rev En & \texttt{Off} \\
+Limits & Soft Limit Forward & \texttt{0} \\
+Limits & Soft Limit Reverse & \texttt{0} \\
+Limits & Limit Switch Position Sensor & \texttt{NONE} \\
+Limits & Limit Switch Fwd Position & \texttt{0} \\
+Limits & Limit Switch Rev Position & \texttt{0} \\
+
+Follower Mode & Follower Mode Leader Id & \texttt{0} \\
+Follower Mode & Follower Mode Is Inverted & \texttt{OFF} \\
+
+Primary Encoder & Encoder Counts Per Rev & \texttt{409} \\
+Primary Encoder & Encoder Average Depth & \texttt{64} \\
+Primary Encoder & Encoder Sample Delta & \texttt{200} \\
+Primary Encoder & Encoder Inverted & \texttt{OFF} \\
+Primary Encoder & Position Conversion Factor & \texttt{1} \\
+Primary Encoder & Velocity Conversion Factor & \texttt{1} \\
+Primary Encoder & Uvw Sensor Sample Rate & \texttt{0.03125} \\
+Primary Encoder & Uvw Sensor Average Depth & \texttt{3} \\
+
+Alternate Encoder & Compatibility Port Config & \texttt{DEFAULT} \\
+Alternate Encoder & Alt Encoder Counts Per Rev & \texttt{409} \\
+Alternate Encoder & Alt Encoder Average Depth & \texttt{64} \\
+Alternate Encoder & Alt Encoder Sample Depth & \texttt{200} \\
+Alternate Encoder & Alt Encoder Inverted & \texttt{OFF} \\
+Alternate Encoder & Alt Encoder Position Conversion & \texttt{1} \\
+Alternate Encoder & Alt Encoder Velocity Conversion & \texttt{1} \\
+
+Duty Cycle Absolute Encoder & Duty Cycle Position Factor & \texttt{1} \\
+Duty Cycle Absolute Encoder & Duty Cycle Velocity Factor & \texttt{1} \\
+Duty Cycle Absolute Encoder & Duty Cycle Inverted & \texttt{OFF} \\
+Duty Cycle Absolute Encoder & Duty Cycle Sensor Mode & \texttt{Absolute} \\
+Duty Cycle Absolute Encoder & Duty Cycle Average Depth & \texttt{7} \\
+Duty Cycle Absolute Encoder & Duty Cycle Zero Centered & \texttt{Off} \\
+Duty Cycle Absolute Encoder & Duty Cycle Sensor Prescaler & \texttt{7} \\
+Duty Cycle Absolute Encoder & Duty Cycle Offset & \texttt{0} \\
+Duty Cycle Absolute Encoder & Duty Cycle Encoder Start Pulse Us & \texttt{0} \\
+Duty Cycle Absolute Encoder & Duty Cycle Encoder End Pulse Us & \texttt{0} \\
+
+Analog Sensor & Analog Position Conversion & \texttt{1} \\
+Analog Sensor & Analog Velocity Conversion & \texttt{1} \\
+Analog Sensor & Analog Average Depth & \texttt{64} \\
+Analog Sensor & Analog Sensor Mode & \texttt{ABSOLUTE} \\
+Analog Sensor & Analog Inverted & \texttt{Off} \\
+Analog Sensor & Analog Sample Delta & \texttt{200} \\
+
+Status Frame Period & Status 0 Period & \texttt{10} \\
+Status Frame Period & Status 1 Period & \texttt{20} \\
+Status Frame Period & Status 2 Period & \texttt{20} \\
+Status Frame Period & Status 3 Period & \texttt{50} \\
+Status Frame Period & Status 4 Period & \texttt{20} \\
+Status Frame Period & Status 5 Period & \texttt{200} \\
+Status Frame Period & Status 6 Period & \texttt{200} \\
+Status Frame Period & Status 7 Period & \texttt{250} \\
+Status Frame Period & Status 8 Period & \texttt{20} \\
+Status Frame Period & Status 9 Period & \texttt{100} \\
+
+Status Frame Force Enable & Force Enable Status 0 & \texttt{Off} \\
+Status Frame Force Enable & Force Enable Status 1 & \texttt{Off} \\
+Status Frame Force Enable & Force Enable Status 2 & \texttt{Off} \\
+Status Frame Force Enable & Force Enable Status 3 & \texttt{Off} \\
+Status Frame Force Enable & Force Enable Status 4 & \texttt{Off} \\
+Status Frame Force Enable & Force Enable Status 5 & \texttt{Off} \\
+Status Frame Force Enable & Force Enable Status 6 & \texttt{Off} \\
+Status Frame Force Enable & Force Enable Status 7 & \texttt{Off} \\
+Status Frame Force Enable & Force Enable Status 8 & \texttt{Off} \\
+Status Frame Force Enable & Force Enable Status 9 & \texttt{Off} \\
+
+
+
+\bottomrule
+\end{longtable}

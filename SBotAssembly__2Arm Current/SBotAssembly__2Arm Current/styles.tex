@@ -1,0 +1,95 @@
+% Colors
+\definecolor{sbotblue}{HTML}{1F4E79}
+\definecolor{sbotlightblue}{HTML}{EAF3FA}
+\definecolor{sbotgray}{HTML}{F4F4F4}
+
+% Callout boxes
+\newtcolorbox{partsbox}{
+colback=sbotlightblue,
+colframe=sbotblue,
+title=Required Parts,
+fonttitle=\bfseries
+}
+
+\newtcolorbox{warningbox}{
+colback=yellow!10,
+colframe=orange!80!black,
+title=Important,
+fonttitle=\bfseries
+}
+
+\newtcolorbox{tipbox}{
+colback=sbotgray,
+colframe=gray,
+title=Tip,
+fonttitle=\bfseries
+}
+
+\titleformat{\section}
+{\Large\bfseries\color{sbotblue}}
+{\thesection}{0.75em}{}
+[\titlerule]
+
+\titleformat{\subsection}
+{\large\bfseries\color{sbotblue}}
+{\thesubsection}{0.75em}{}
+
+% Better spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\setlist[itemize]{topsep=3pt,itemsep=2pt}
+
+% Headers/footers
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{S-Bot Assembly Guide}
+\rhead{\leftmark}
+\cfoot{\thepage}
+
+
+% Image safety
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.85\textheight 0.85\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+
+%------------------------------------------------
+% Table of Contents Styling
+%------------------------------------------------
+
+
+\renewcommand{\contentsname}{Table of Contents}
+
+\setlength{\cftbeforesecskip}{6pt}
+\setlength{\cftbeforesubsecskip}{2pt}
+
+\renewcommand{\cftsecfont}{\bfseries\color{sbotblue}}
+\renewcommand{\cftsecpagefont}{\bfseries\color{sbotblue}}
+
+\renewcommand{\cftsubsecfont}{\normalfont}
+\renewcommand{\cftsubsecpagefont}{\normalfont}
+
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+
+%------------------------------------------------
+% Assembly Step Styling
+%------------------------------------------------
+
+\newcounter{assemblystep}
+
+\newcommand{\resetassemblysteps}{%
+    \setcounter{assemblystep}{0}
+}
+
+\newcommand{\assemblystep}[1]{%
+    \refstepcounter{assemblystep}
+    \vspace{0.6cm}
+    {\large\bfseries\color{sbotblue}Step \theassemblystep: #1\par}
+    \vspace{0.15cm}
+    \noindent\color{sbotblue}\rule{\textwidth}{0.5pt}
+    \color{black}
+    \vspace{0.25cm}
+}
